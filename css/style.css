@@ -6,12 +6,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.restartBtn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #f7b32c;
+    color: #000;
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+
+.restartBtn:hover {
+    cursor: pointer;
+    background-color: #e7a217;
 }
 
 .board {
     height: 300px;
-    width: 300px;    
+    width: 300px;
+    margin-top: 30px;    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
